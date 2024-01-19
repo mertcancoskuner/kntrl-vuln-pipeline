@@ -34,7 +34,7 @@ jobs:
         run: |
           wget download.kondukto.io/kntrl/main
           chmod +x main
-          sudo ./main run --mode=trace --hosts=kondukto.io,download.kondukto.io,168.63.129.16 &
+          sudo ./main run --mode=monitor --hosts=kondukto.io,download.kondukto.io,168.63.129.16 &
           
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
