@@ -48,6 +48,4 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: print report
         run: |
-          cat /tmp/kntrl.out 
-          apt install -y jq
-          cat /tmp/kntrl.out | jq 
+          cat /tmp/kntrl.out
