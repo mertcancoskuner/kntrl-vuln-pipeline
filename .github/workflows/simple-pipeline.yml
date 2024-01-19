@@ -49,4 +49,4 @@ jobs:
         run: |
           cat /tmp/kntrl.out
           echo "---------------------"
-          sudo tail -n 30 /sys/kernel/debug/tracing/trace
+          sudo tail -n 100 /sys/kernel/debug/tracing/trace
