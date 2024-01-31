@@ -58,3 +58,12 @@ jobs:
           cat /tmp/kntrl.out
           echo "---------------------"
           
+
+      # Runs a set of commands using the runners shell
+      - name: print report
+        run: |
+          echo "Print ENV"
+          echo "---------------------"
+          env
+          echo "---------------------"
+          
